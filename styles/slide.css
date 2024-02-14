@@ -61,11 +61,11 @@
   width: 100%;
 }
 
-.slide-active.slide-img-container {
-  animation: img-zoom-out 3s ease-in;
-  -moz-animation: img-zoom-out 3s ease-in;
-  -o-animation: img-zoom-out 3s ease-in;
-  -webkit-animation: img-zoom-out 3s ease-in;
+.slide-active .slide-img-container {
+  animation: img-zoom-out 5s ease-in;
+  -moz-animation: img-zoom-out 5s ease-in;
+  -o-animation: img-zoom-out 5s ease-in;
+  -webkit-animation: img-zoom-out 5s ease-in;
 }
 
 .slide-container {
