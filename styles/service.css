@@ -1,0 +1,332 @@
+.service-video {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.animated.service-video {
+  animation: expand-from-bottom 1.2s linear;
+  -moz-animation: expand-from-bottom 1.2s linear;
+  -o-animation: expand-from-bottom 1.2s linear;
+  -webkit-animation: expand-from-bottom 1.2s linear;
+}
+
+.service-video-info {
+  padding-bottom: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.service-video-container {
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.service-video-content {
+  padding: 100px 75px 65px 100px;
+  position: relative;
+  width: calc(50% - 10px);
+  z-index: 31;
+}
+
+.service-video-content::before {
+  border: 2px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  border-bottom-right-radius: 160px;
+  content: '';
+  height: 100%;
+  left: -50px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: calc(100% + 100px);
+}
+
+.service-video-content ul {
+  margin-bottom: 48px;
+  padding-inline-start: 1.3em;
+}
+
+.service-video-content .button-container {
+  margin-bottom: 35px;
+}
+
+.service-video-background {
+  content: '';
+  height: 100%;
+  isolation: isolate;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.service-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 0;
+}
+
+.service-card {
+  font-size: 0;
+  position: relative;
+  width: 100%;
+}
+
+.service-card .layer::before {
+  background: linear-gradient(100deg, rgba(30, 50, 45, .9) 0%, rgba(31, 47, 43, 0) 70%);
+}
+
+.service-card .animated {
+  animation: expand-from-left 1.2s linear;
+  -moz-animation: expand-from-left 1.2s linear;
+  -o-animation: expand-from-left 1.2s linear;
+  -webkit-animation: expand-from-left 1.2s linear;
+}
+
+.service-card-img {
+  height: 500px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  width: 100%;
+}
+
+.service-card-body {
+  color: #fff;
+  height: 89%;
+  left: 0;
+  overflow: hidden;
+  padding: 65px 115px;
+  position: absolute;
+  top: 0;
+  width: 85%;
+  z-index: 31;
+}
+
+.service-card:hover .animated+.service-card-body {
+  color: #000;
+}
+
+.service-card-body::before {
+  background-color: #e0dad5;
+  border-bottom-right-radius: 160px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  width: 0;
+}
+
+.service-card-body::after {
+  background: url("../assets/line.svg") no-repeat center;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  width: 0;
+  z-index: 0;
+}
+
+.service-card:hover .animated+.service-card-body::before,
+.service-card:hover .animated+.service-card-body::after {
+  width: 100%;
+}
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  height: 100%;
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  z-index: 33;
+}
+
+.animated+.service-card-body .service-card-content {
+  opacity: 1;
+}
+
+.service-card-description {
+  align-items: end;
+  color: #000;
+  display: flex;
+  height: 0;
+  line-height: 25px;
+  margin-bottom: 35px;
+  opacity: 0;
+}
+
+.service-card:hover .service-card-description {
+  flex-grow: 1;
+  height: auto;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+
+.service-card-description ul {
+  padding-inline-start: 1.3em;
+}
+
+.service-card-content .button-container {
+  margin: 0;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.service-card-content .button-primary {
+  background-color: transparent;
+}
+
+.service-card-content .theme-button::before {
+  background-color: #fff;
+  left: 0;
+  width: 16px;
+}
+
+.service-card:hover .button-container {
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.service-card:hover .button-primary {
+  background-color: var(--primary);
+}
+
+.service-card:hover .theme-button {
+  padding: 10px 28px;
+}
+
+.service-card:hover .theme-button::before {
+  background-color: var(--primary);
+  left: -30px;
+  width: 30px;
+}
+
+.service-card:hover .theme-button:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 28px;
+  transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+}
+
+.service-card:hover .theme-button:hover::before {
+  content: '';
+  height: 1px;
+  left: -30px;
+  right: 0;
+  width: 30px;
+}
+
+.service-grid-button {
+  grid-column: 1/3;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.service-grid-button .button-container {
+  margin: 0 auto 35px auto;
+}
+
+@media screen and (max-width: 991.98px) {
+
+  .service-video-content {
+    width: calc(100% - 35px);
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+
+  .service-video-info {
+    padding-bottom: 70px;
+  }
+
+  .service-video-content {
+    padding: 70px 35px 35px 15px;
+  }
+
+  .service-video-content::before {
+    width: calc(100% + 55px);
+  }
+
+  .service-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .service-card .animated+.service-card-body {
+    animation: expand-from-left 1.2s linear;
+    -moz-animation: expand-from-left 1.2s linear;
+    -o-animation: expand-from-left 1.2s linear;
+    -webkit-animation: expand-from-left 1.2s linear;
+  }
+
+  .service-card-img {
+    height: 300px;
+  }
+
+  .service-card-body {
+    height: auto;
+    padding: 70px 15px 35px 15px;
+    position: relative;
+    width: 100%;
+  }
+
+  .service-card-body::before,
+  .service-card-body::after {
+    border-bottom-right-radius: 80px;
+    width: 100%;
+  }
+
+  .service-card-content {
+    color: #000;
+  }
+
+  .service-card-description {
+    flex-grow: 1;
+    height: auto;
+    opacity: 1;
+  }
+
+  .service-card-content .button-container {
+    margin-left: 30px;
+  }
+
+  .service-card-content .button-primary {
+    background-color: var(--primary);
+  }
+
+  .service-card-content .theme-button::before {
+    background-color: var(--primary);
+    left: -25px;
+    width: 30px;
+  }
+
+  .service-grid-button {
+    margin-top: 0;
+  }
+}

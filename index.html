@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AECO Manufacturing (M) Sdn. Bhd. – Wire Harnessing & Cable Assembly Industry</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./styles/general.css" rel="stylesheet">
+  <link href="./styles/nav.css" rel="stylesheet">
+  <link href="./styles/slide.css" rel="stylesheet">
+  <link href="./styles/introduction.css" rel="stylesheet">
+  <link href="./styles/expertise.css" rel="stylesheet">
+  <link href="./styles/service.css" rel="stylesheet">
+  <link href="./styles/facilities.css" rel="stylesheet">
+  <link href="./styles/certification.css" rel="stylesheet">
+  <link href="./styles/banner.css" rel="stylesheet">
+  <link href="./styles/footer.css" rel="stylesheet">
+  <link href="./styles/animation.css" rel="stylesheet">
+
+  <script>
+    // Set height of slider
+    function calculateSliderDimension() {
+      const screenWidth = document.documentElement.clientWidth;
+      const slider = document.querySelector(".slider");
+
+      if (screenWidth >= 778) {
+        const newHeight = screenWidth / 2.26;
+        slider.style.height = Math.round(newHeight) + "px";
+      }
+      else {
+        const newHeight = screenWidth / 0.937;
+        slider.style.height = Math.round(newHeight) + "px";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="nav-sticky" id="js-navbar">
+    <div class="nav-container">
+      <a href="#">
+        <img alt="AECO logo" class="nav-img-logo" loading="lazy" src="./assets/logo.png">
+      </a>
+      <button>
+        <i class="bi bi-list"></i>
+      </button>
+      <nav class="offcanvas">
+        <div class="offcanvas-btn-close">
+          <button>
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="offcanvas-nav-list">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item nav-dropdown">
+              <span>
+                <a class="nav-link" href="#">Services</a>
+                <button>
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+              </span>
+              <ul class="nav-dropdown-list">
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Strain Relief</a>
+                </li>
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Over Moulding</a>
+                </li>
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Modules & Customizations</a>
+                </li>
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Panel Mount Cables</a>
+                </li>
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Wire Harness & Cable Assy</a>
+                </li>
+                <li class="nav-item nav-dropdown-item">
+                  <a class="nav-link" href="#">Assemble To Over-Mould</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="slider">
+      <div class="slide animate animated">
+        <div class="slide-img-container"></div>
+        <div class="slide-container">
+          <div class="slide-content">
+            <div class="slide-title animate">Wire Harnessing & <br>Cable Assembly Industry</div>
+            <div class="slide-description animate">
+              <i class="bi bi-circle-fill"></i>
+              With over 30 years of experience in wire harnessing and cable assembly industry
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide animate animated">
+        <div class="slide-img-container"></div>
+        <div class="slide-container">
+          <div class="slide-content">
+            <div class="slide-title animate">Wire Harnessing & <br>Cable Assembly Industry</div>
+            <div class="slide-description animate">
+              <i class="bi bi-circle-fill"></i>
+              With over 30 years of experience in wire harnessing and cable assembly industry
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide animate animated">
+        <div class="slide-img-container"></div>
+        <div class="slide-container">
+          <div class="slide-content">
+            <div class="slide-title animate">Wire Harnessing & <br>Cable Assembly Industry</div>
+            <div class="slide-description animate">
+              <i class="bi bi-circle-fill"></i>
+              With over 30 years of experience in wire harnessing and cable assembly industry
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="introduction">
+      <div class="introduction-main">
+        <div>
+          <h3 class="title animate fade-up">Welcome to AECO</h3>
+        </div>
+        <span class="title-underline"></span>
+        <p class="introduction-main-content">
+          AECO Manufacturing (M) Sdn. Bhd, has an operation with over 30 years of experience in wire harnessing and
+          cable assembly industry. The experience and knowledge over the years has enable us to support customer in
+          design and the uncompromising quality requirement.
+        </p>
+        <div class="button-container">
+          <a class="theme-button button-primary" href="#">Learn More</a>
+        </div>
+        <div class="introduction-img-grid">
+          <div class="introduction-img-container animate">
+            <img alt="AECO1" class="introduction-img" loading="lazy" src="./assets/AECO1-jpg.webp">
+          </div>
+          <div class="introduction-img-container animate">
+            <img alt="AECO2" class="introduction-img" loading="lazy" src="./assets/AECO2-jpg.webp">
+          </div>
+          <div class="introduction-img-container animate">
+            <img alt="AECO3" class="introduction-img" loading="lazy" src="./assets/AECO3-jpg.webp">
+          </div>
+        </div>
+      </div>
+      <div class="introduction-side">
+        <div class="introduction-side-container">
+          <div class="introduction-side-content">
+            <div class="introduction-side-card animate">
+              <div class="introduction-icon-bg">
+                <img alt="design" class="introduction-icon-img" loading="lazy" src="./assets/design.png">
+              </div>
+              <h2>Design</h2>
+            </div>
+            <div class="introduction-side-card animate">
+              <div class="introduction-icon-bg">
+                <img alt="development" class="introduction-icon-img" loading="lazy" src="./assets/development.png">
+              </div>
+              <h2>Development</h2>
+            </div>
+            <div class="introduction-side-card animate">
+              <div class="introduction-icon-bg">
+                <img alt="sourcing" class="introduction-icon-img" loading="lazy" src="./assets/Sourcing.png">
+              </div>
+              <h2>Sourcing</h2>
+            </div>
+            <div class="introduction-side-card animate">
+              <div class="introduction-icon-bg">
+                <img alt="industrialisation" class="introduction-icon-img" loading="lazy"
+                  src="./assets/Industrialisation.png">
+              </div>
+              <h2>Industrialisation</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise">
+      <h3 class="title animate fade-up">Expertise</h3>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <h3 class="expertise-card-title">Clients</h3>
+          <span class="expertise-card-content js-expertise-counter animate animated">200</span>
+        </div>
+        <div class="expertise-card">
+          <h3 class="expertise-card-title">Experiences</h3>
+          <span class="expertise-card-content js-expertise-counter animate animated">30</span>
+        </div>
+        <div class="expertise-card">
+          <h3 class="expertise-card-title">People In Team</h3>
+          <span class="expertise-card-content js-expertise-counter animate animated">80</span>
+        </div>
+        <div class="expertise-card">
+          <h3 class="expertise-card-title">Output</h3>
+          <span class="expertise-card-content js-expertise-counter animate animated">6</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-video animate">
+      <div class="service-video-info">
+        <div class="service-video-container">
+          <div class="service-video-content">
+            <h3 class="title">Manufacturing Capabilities</h3>
+            <ul>
+              <li>Our speciality is to design and manufacture Wire & Cable Harnesses.</li>
+            </ul>
+            <div class="button-container">
+              <a class="theme-button button-secondary" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-video-background layer">
+        <video autoplay height="100%" loop muted width="100%">
+          <source src="./assets/AECO-Short-Clips.mp4" type="video/mp4">
+          </source>
+        </video>
+      </div>
+    </section>
+
+    <section class="service-grid">
+      <div class="service-card">
+        <div class="layer animate">
+          <img alt="strain relief" class="service-card-img" loading="lazy" src="./assets/SR-1536x1152.webp">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-content">
+            <h3 class="title">Strain Relief</h3>
+            <div class="service-card-description">
+              <ul>
+                <li>Overmoulded strain relief is a protective technique used in manufacturing to enhance the
+                  durability
+                  and reliability of cables or connectors.</li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <a class="theme-button button-primary" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="layer animate">
+          <img alt="over moulding" class="service-card-img" loading="lazy"
+            src="./assets/f1b7652a-7db1-4175-b26d-e4435650d6d0-jpg.webp">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-content">
+            <h3 class="title">Over Moulding</h3>
+            <div class="service-card-description">
+              <ul>
+                <li>Enhances the cable assembly’s durability, providing resistance against environmental factors.</li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <a class="theme-button button-primary" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="layer animate">
+          <img alt="modules & customizations" class="service-card-img" loading="lazy" src="./assets/rqrcyn3w-jpeg.webp">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-content">
+            <h3 class="title">Modules & Customizations</h3>
+            <div class="service-card-description">
+              <ul>
+                <li>Provide a reliable and organised way to transmit data, power, and signals between different
+                  modules
+                  or
+                  subsystems within a larger electronic system.</li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <a class="theme-button button-primary" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="layer animate">
+          <img alt="panel mount cables" class="service-card-img" loading="lazy"
+            src="./assets/Picture008-1-1536x1152.webp">
+        </div>
+        <div class="service-card-body">
+          <div class="service-card-content">
+            <h3 class="title">Panel Mount Cables</h3>
+            <div class="service-card-description">
+              <ul>
+                <li>Refers to a type of cable assembly designed for secure and convenient integration into
+                  electronic
+                  devices, control panels, or equipment.</li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <a class="theme-button button-primary" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service-grid-button animate fade-up">
+        <div class="button-container">
+          <a class="theme-button button-primary" href="#">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      <div class="facilities-header">
+        <div>
+          <h3 class="title">Company Facilities</h3>
+        </div>
+        <div class="button-container">
+          <a class="theme-button button-primary" href="#">Learn More</a>
+        </div>
+      </div>
+      <span class="title-underline"></span>
+      <div class="facilities-grid">
+        <div class="facilities-card">
+          <div class="facilities-img-container animate">
+            <img alt="Ultrasonic" class="facilities-img" loading="lazy" src="./assets/Ultrasonic-100-jpg.webp">
+          </div>
+          <div class="facilities-title animate">
+            Ultrasonic
+          </div>
+        </div>
+        <div class="facilities-card">
+          <div class="facilities-img-container animate">
+            <img alt="Components-Assy" class="facilities-img" loading="lazy"
+              src="./assets/Components-Assy-100-jpg.webp">
+          </div>
+          <div class="facilities-title animate">
+            Components Assy
+          </div>
+        </div>
+        <div class="facilities-card">
+          <div class="facilities-img-container animate">
+            <img alt="Inkjet-Printer" class="facilities-img" loading="lazy" src="./assets/Inkjet-Printer-100-jpg.webp">
+          </div>
+          <div class="facilities-title animate">
+            Inkjet Printer
+          </div>
+        </div>
+        <div class="facilities-card">
+          <div class="facilities-img-container animate">
+            <img alt="Wire-Securing-cum-Testing" class="facilities-img" loading="lazy"
+              src="./assets/Wire-Securing-cum-Testing-100-jpg.webp">
+          </div>
+          <div class="facilities-title animate">
+            Wire Securing cum Testing Process
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certification">
+      <h3 class="title animate fade-up">Our Certification</h3>
+      <span class="title-underline"></span>
+      <div class="certification-grid">
+        <div>
+          <img alt="cert1" class="certification-img" loading="lazy" src="./assets/cert1.png">
+        </div>
+        <div>
+          <img alt="cert2" class="certification-img" loading="lazy" src="./assets/cert2.png">
+        </div>
+        <div>
+          <img alt="cert3" class="certification-img" loading="lazy" src="./assets/cert3.png">
+        </div>
+        <div>
+          <img alt="cert4" class="certification-img" loading="lazy" src="./assets/cert4.png">
+        </div>
+      </div>
+    </section>
+
+    <div class="banner banner-layer animate">
+      <div class="banner-content">
+        <h3 class="title animate">
+          Your Trusted Global Wire
+          <br>
+          Harness Manufacturer
+        </h3>
+        <div class="banner-description animate">
+          We proudly stand as a premier wire harness manufacturer with a strong global presence. Our expertise extends
+          beyond borders, delivering exceptional wire harness solutions to clients worldwide.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <div class="footer-logo-container">
+          <img alt="AECO logo" class="footer-logo" loading="lazy" src="./assets/logo.png">
+        </div>
+        <div class="footer-copyright">
+          <p>
+            Copyright &copy; <span class="current-year"></span> AECO Manufacturing (M) Sdn. Bhd.
+            <span>199901020023 (494923-D).</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">About</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Facilities</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-company-info">
+          <p>AECO MANUFACTURING (M) SDN BHD</p>
+          <p>
+            101-09-05 Menara Perdana, Jalan Gurdwara,
+            <br>
+            10300 George Town, Penang, Malaysia.
+          </p>
+          <p>Tel: +604 227 1418</p>
+          <p>Fax: +604 227 1373</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright-bottom">
+      <p>
+        Copyright &copy; <span class="current-year"></span> AECO Manufacturing (M) Sdn. Bhd.
+        <span>199901020023 (494923-D).</span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Run function once on page load
+    calculateSliderDimension();
+
+    // Add resize event listener after page load
+    window.addEventListener("resize", calculateSliderDimension);
+  </script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

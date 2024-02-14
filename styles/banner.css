@@ -1,0 +1,103 @@
+.banner {
+  background-attachment: fixed;
+  background-image: url("../assets/Worldwidebg-jpg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  overflow: hidden;
+  padding-left: 80px;
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+}
+
+.banner-layer::before {
+  background-color: rgba(30, 50, 45, .5);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.banner::after {
+  background: url("../assets/global.png") no-repeat;
+  background-size: cover;
+  bottom: -10%;
+  content: '';
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  right: -15%;
+  width: 60%;
+}
+
+.animate.banner {
+  opacity: 1;
+  visibility: visible;
+}
+
+.animated.banner::after {
+  animation: slide-up 2s linear;
+  -moz-animation: slide-up 2s linear;
+  -o-animation: slide-up 2s linear;
+  -webkit-animation: slide-up 2s linear;
+  opacity: 1;
+}
+
+.banner-content {
+  color: #fff;
+  padding: 35px 15px 0 15px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner-content {
+  visibility: visible;
+}
+
+.banner-content .animated.title {
+  animation: expand-from-left 2s linear 0.2s;
+  -moz-animation: expand-from-left 2s linear 0.2s;
+  -o-animation: expand-from-left 2s linear 0.2s;
+  -webkit-animation: expand-from-left 2s linear 0.2s;
+}
+
+.banner-description {
+  line-height: 1.5;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  position: relative;
+  width: 55%;
+}
+
+.banner-description::before {
+  background-color: #fff;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}
+
+@media screen and (max-width: 768.98px) {
+
+  .banner {
+    padding: 35px 0 0;
+  }
+
+  .banner::after {
+    height: 53%;
+    right: -25%;
+    width: 90%;
+  }
+
+  .banner-description,
+  .banner-description::before {
+    width: 100%;
+  }
+}

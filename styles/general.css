@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1e322d;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+video {
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.title-underline {
+  border-bottom: 2px solid #2a2a2a;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.button-primary::before {
+  background-color: var(--primary);
+}
+
+.button-secondary {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.button-secondary::before {
+  background-color: #fff;
+}
+
+.theme-button {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 28px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.theme-button::before {
+  content: '';
+  height: 1px;
+  left: -30px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  width: 30px;
+}
+
+.theme-button:hover {
+  padding-right: 40px;
+}
+
+.theme-button:hover::before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 12px;
+  font-weight: 900;
+  height: 12px;
+  left: auto;
+  right: 15px;
+  transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  -webkit-transition: left 0.3s ease;
+  width: 12px;
+}
+
+.button-container {
+  height: fit-content;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.button-container:hover {
+  margin-left: 0;
+}
+
+.layer::before {
+  background: linear-gradient(90deg, rgba(30, 50, 45, 1) 0%, rgba(31, 47, 43, 0) 100%);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+@media screen and (max-width: 768.98px) {
+
+  .title {
+    font-size: 27px;
+  }
+}

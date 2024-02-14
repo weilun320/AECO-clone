@@ -1,0 +1,40 @@
+.certification {
+  background-color: #e0dad5;
+  padding: 100px 0;
+  padding-left: 94px;
+}
+
+.certification .title-underline {
+  margin-right: 15px;
+}
+
+.certification-grid {
+  align-items: center;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.certification-img {
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  -o-object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 768.98px) {
+
+  .certification {
+    padding: 70px 15px;
+  }
+
+  .certification-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certification-img {
+    max-height: 80px;
+  }
+}

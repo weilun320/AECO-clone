@@ -1,0 +1,130 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  animation: expand-from-right 1.2s linear;
+  -moz-animation: expand-from-right 1.2s linear;
+  -o-animation: expand-from-right 1.2s linear;
+  -webkit-animation: expand-from-right 1.2s linear;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-active {
+  display: block;
+  opacity: 1;
+}
+
+.slide-img-container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-img-container::before {
+  background: linear-gradient(rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0) 32%,
+      rgba(255, 255, 255, 0) 100%);
+  content: '';
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.slide-img-container::after {
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 81%,
+      rgba(0, 0, 0, 0) 100%);
+  content: '';
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slide-active.slide-img-container {
+  animation: img-zoom-out 3s ease-in;
+  -moz-animation: img-zoom-out 3s ease-in;
+  -o-animation: img-zoom-out 3s ease-in;
+  -webkit-animation: img-zoom-out 3s ease-in;
+}
+
+.slide-container {
+  content: '';
+  height: 100%;
+  left: 7.3%;
+  position: absolute;
+  top: 52.5%;
+}
+
+.slide-content {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+  z-index: 3;
+}
+
+.slide-title {
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.animated.slide-title {
+  animation: reveal-text 1s linear;
+  -moz-animation: reveal-text 1s linear;
+  -o-animation: reveal-text 1s linear;
+  -webkit-animation: reveal-text 1s linear;
+}
+
+.slide-description {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  width: fit-content;
+  word-wrap: break-word;
+}
+
+.animated.slide-description {
+  animation: expand-from-bottom 1s linear;
+  -moz-animation: expand-from-bottom 1s linear;
+  -o-animation: expand-from-bottom 1s linear;
+  -webkit-animation: expand-from-bottom 1s linear;
+}
+
+.slide:first-child .bi-circle-fill {
+  color: #000;
+}
+
+.bi-circle-fill {
+  color: #168a44;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 777.98px) {
+
+  .slide-container {
+    left: 4.4%;
+    top: 51%;
+  }
+}

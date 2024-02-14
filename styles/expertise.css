@@ -1,0 +1,87 @@
+.expertise {
+  margin: 0 94px;
+  padding: 100px 0;
+}
+
+.expertise-grid {
+  display: grid;
+  gap: 38px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 5px;
+}
+
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.expertise-card-title {
+  border-bottom: 1px solid #000;
+  border-top: 2px solid #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.expertise-card-content {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+}
+
+.expertise-card-content.animate {
+  opacity: 1;
+  visibility: visible;
+}
+
+.expertise-card-content::after {
+  content: '+';
+
+}
+
+.expertise-card:nth-child(4) .expertise-card-content::after {
+  content: 'm+';
+}
+
+.expertise-card:nth-child(even) .expertise-card-content::before {
+  bottom: 0;
+  color: #5a5a5a;
+  font-size: 15px;
+  position: absolute;
+}
+
+.expertise-card:nth-child(2) .expertise-card-content::before {
+  content: 'years';
+  right: -45px;
+}
+
+.expertise-card:nth-child(4) .expertise-card-content::before {
+  content: 'unit/year';
+  right: -70px;
+}
+
+@media screen and (max-width: 768.98px) {
+
+  .expertise {
+    margin: 0;
+    padding: 0 15px;
+    padding-bottom: 35px;
+  }
+
+  .expertise-grid {
+    gap: 0;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .expertise-card {
+    margin-bottom: 35px;
+    padding: 0 5px;
+  }
+}
