@@ -176,6 +176,10 @@ footer {
   .footer-copyright-bottom {
     margin: 0 15px;
   }
+
+  .footer-company-info p:nth-of-type(2) br {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 689.98px) {
